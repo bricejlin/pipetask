@@ -1,0 +1,7 @@
+<% if @pipe.approved? %>
+		$('div#<%= dom_id(@pipe) %>').children('.flexslider').css('border','4px solid green');
+		$('div#<%= dom_id(@pipe) %>').children('a.toggle').text('un-approve');
+<% else %>
+		$('div#<%= dom_id(@pipe) %>').children('.flexslider').css('border','4px solid white');
+		$('div#<%= dom_id(@pipe) %>').children('a.toggle').text('approve');
+<% end %>

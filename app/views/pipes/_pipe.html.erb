@@ -1,0 +1,16 @@
+<div class="flex-wrap">
+<%= div_for pipe do %>
+<h3><%= pipe.name %></h3>
+		<div class="flexslider <%= pipe.approved %>">
+			<ul class="slides">
+				<% pipe.images.each do |img| %>
+					<li>
+						<%= image_tag("#{img.url}") %>
+					</li>
+				<% end %>
+			</ul>
+		</div>
+		<%= link_to approve_text(pipe), approve_pipe_path(pipe), remote: true, method: 'PUT', class: "#{approve_text(pipe)} toggle" %> |
+		<%= link_to 'comment', '#' %>
+<% end %>
+</div>
