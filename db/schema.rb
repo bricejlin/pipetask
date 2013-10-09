@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131008003151) do
+ActiveRecord::Schema.define(version: 20131009170049) do
 
   create_table "images", force: true do |t|
     t.string   "url"
@@ -28,6 +28,7 @@ ActiveRecord::Schema.define(version: 20131008003151) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.boolean  "approved",   default: false
+    t.text     "comments"
   end
 
 end

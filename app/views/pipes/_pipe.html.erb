@@ -1,6 +1,6 @@
 <div class="flex-wrap">
 <%= div_for pipe do %>
-<h3><%= pipe.name %></h3>
+	<h3><%= link_to pipe.name, pipe %></h3>
 		<div class="flexslider <%= pipe.approved %>">
 			<ul class="slides">
 				<% pipe.images.each do |img| %>
@@ -10,7 +10,13 @@
 				<% end %>
 			</ul>
 		</div>
-		<%= link_to approve_text(pipe), approve_pipe_path(pipe), remote: true, method: 'PUT', class: "#{approve_text(pipe)} toggle" %> |
-		<%= link_to 'comment', '#' %>
+		<%= form_for pipe do |f| %>
+			<p>
+				<%= f.label :comments %><br/>
+				<%= f.text_area :comments, rows: 4 %>
+				<%= f.submit 'Update' %>
+			</p>
+		<% end %>
+		<%= link_to approve_text(pipe), approve_pipe_path(pipe), remote: true, method: 'PUT', class: "#{approve_text(pipe)} toggle" %>
 <% end %>
 </div>

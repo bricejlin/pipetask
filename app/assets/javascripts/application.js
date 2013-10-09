@@ -15,7 +15,7 @@
 //= require turbolinks
 //= require_tree .
 
-$(window).load(function() {
+$(document).ready(function() {
   $('.flexslider').flexslider({
     animation: "slide",
     slideshow: false

@@ -1,6 +1,6 @@
 module ApplicationHelper
 	def approve_text(approvable)
-		approvable.approved? ? 'un-approve' : 'approve'
+		approvable.approved? ? 'approved' : 'approve'
 	end
 end
 

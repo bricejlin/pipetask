@@ -1,4 +1,5 @@
 class PipesController < ApplicationController
+	before_action :correct_pipe, only: [:show, :edit, :update, :approve]
   def index
   	@pipes = Pipe.all
   end
@@ -17,8 +18,24 @@ class PipesController < ApplicationController
   	end
   end
 
-  def approve
-  	@pipe = Pipe.find(params[:id])
+  def show
+  end
+
+  def edit
+  end
+
+  def update
+  	respond_to do |format|
+  		if @pipe.update(pipe_params)
+  			format.html { redirect_to root_url }
+  			format.js
+  		else
+  			format.html { render :index }
+  		end
+  	end
+  end
+
+  def approve # toggles pipe's approval value true/false
   	respond_to do |format|
 	  	if @pipe.toggle!(:approved)
 	  		format.html { redirect_to root_url }
@@ -32,6 +49,10 @@ class PipesController < ApplicationController
 private
 
 	def pipe_params
-		params.require(:pipe).permit(:name, :sides_shot, images_attributes: :url)
+		params.require(:pipe).permit(:name, :sides_shot, :comments, images_attributes: :url)
+	end
+
+	def correct_pipe
+		@pipe = Pipe.find(params[:id])
 	end
 end
