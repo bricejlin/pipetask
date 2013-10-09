@@ -2,6 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+$approved: #7cea6d;
+
 a {
 	text-decoration: none;
 	color: #414141;
@@ -41,6 +43,10 @@ form.edit_pipe {
 	text-align: left;
 	textarea {
 		width: 70%;
+		border: 1px solid #efefef;
+		-webkit-border-radius: 5px 0 0 5px;
+		-moz-border-radius: 5px 0 0 5px;
+		border-radius: 5px 0 0 5px;
 	}
 	input {
 		width: 27%;
@@ -48,10 +54,10 @@ form.edit_pipe {
 	}
 }
 .approved {
-	color: green;
+	color: $approved;
 }
 .flexslider.true {
-	border: 4px solid green;
+	border: 4px solid $approved;
 }
 
 

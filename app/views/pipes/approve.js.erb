@@ -1,6 +1,6 @@
 <% if @pipe.approved? %>
-		$('div#<%= dom_id(@pipe) %>').children('.flexslider').css('border','4px solid green');
-		$('div#<%= dom_id(@pipe) %>').children('a.toggle').text('approved').css('color','green');
+		$('div#<%= dom_id(@pipe) %>').children('.flexslider').css('border','4px solid #7cea6d');
+		$('div#<%= dom_id(@pipe) %>').children('a.toggle').text('approved').css('color','#7cea6d');
 <% else %>
 		$('div#<%= dom_id(@pipe) %>').children('.flexslider').css('border','4px solid white');
 		$('div#<%= dom_id(@pipe) %>').children('a.toggle').text('approve').css('color','#414141');
