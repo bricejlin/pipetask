@@ -63,11 +63,11 @@ form.edit_pipe {
 
 @font-face {
 	font-family: 'pacifico';
-	src:url('pacifico-webfont.eot');
-	src:url('pacifico-webfont.eot?#iefix') format('embedded-opentype'),
-		url('pacifico-webfont.woff') format('woff'),
-		url('pacifico-webfont.ttf') format('truetype'),
-		url('pacifico-webfont.svg#pacifico-webfont') format('svg');
+	src:url('../fonts/pacifico-webfont.eot');
+	src:url('../fonts/pacifico-webfont.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/pacifico-webfont.woff') format('woff'),
+		url('../fonts/pacifico-webfont.ttf') format('truetype'),
+		url('../fonts/pacifico-webfont.svg#pacifico-webfont') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
