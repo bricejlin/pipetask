@@ -1,7 +1,7 @@
 class PipesController < ApplicationController
 	before_action :correct_pipe, only: [:show, :edit, :update, :approve]
   def index
-  	@pipes = Pipe.all
+  	@pipes = Pipe.all.order("created_at desc")
   end
 
   def new
