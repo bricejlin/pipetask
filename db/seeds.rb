@@ -67,13 +67,5 @@ Pipe.create!([
 			{ url: 'tynn-06.jpg' },
 			{ url: 'tynn-07.jpg' }
 		]	
-	},
-	{
-		name: 'Example Pipe Siete',
-		sides_shot: 9
-	},
-	{
-		name: 'Example Pipe Ocho',
-		sides_shot: 3
-	},
+	}
 ])
