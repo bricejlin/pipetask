@@ -1,0 +1,22 @@
+<%= form_for @pipe do |f| %>
+	<%= render 'shared/errors', object: @pipe %>
+	<fieldset>
+		<p>
+			<%= f.label :name %>
+			<%= f.text_field :name, autofocus: true %>
+			<%= f.label :sides_shot %>
+			<%= f.text_field :sides_shot %>
+		</p>
+
+		<%= f.fields_for :images do |img| %>
+		<p>
+			<%= img.label :url, 'Image Filename' %>
+			<%= img.text_field :url %>
+		</p>
+		<% end %>
+		<p>
+			<%= f.submit %>
+			<%= link_to 'Cancel', root_path %>
+		</p>
+	</fieldset>
+<% end %>

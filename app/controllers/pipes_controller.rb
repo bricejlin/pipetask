@@ -27,7 +27,7 @@ class PipesController < ApplicationController
   def update
   	respond_to do |format|
   		if @pipe.update(pipe_params)
-  			format.html { redirect_to root_url }
+  			format.html { redirect_to root_url, notice: "#{@pipe.name} succesfully updated!" }
   			format.js
   		else
   			format.html { render :index }

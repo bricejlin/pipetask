@@ -26,7 +26,7 @@ h1#logo a {
 .img-review {
 	border: 1px solid #efefef;
 }
-form.new_pipe {
+form.new_pipe, form.edit_pipe {
 	width: 800px;
 	margin: 0 auto;
 	input {
@@ -39,18 +39,20 @@ form.new_pipe {
 		margin: auto 3%;
 	}
 }
-form.edit_pipe {
+.comment-form {
 	text-align: left;
+	font-size: 80%;
 	textarea {
 		width: 70%;
 		border: 1px solid #efefef;
 		-webkit-border-radius: 5px 0 0 5px;
 		-moz-border-radius: 5px 0 0 5px;
 		border-radius: 5px 0 0 5px;
+		height: 72px;
 	}
 	input {
-		width: 27%;
-		height: 81px;
+		width: 26%;
+		height: 78px;
 	}
 }
 .approved {
@@ -59,7 +61,23 @@ form.edit_pipe {
 .flexslider.true {
 	border: 4px solid $approved;
 }
-
+.flash {
+	.notice {
+		color: green;
+	}
+}
+#errors {
+	width: 350px;
+	margin: 0 auto;
+	ul {
+		padding-left: 45px;
+	}
+	li {
+		color: red;
+		list-style: none;
+		text-align: left;
+	}
+}
 
 @font-face {
 	font-family: 'pacifico';
