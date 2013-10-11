@@ -55,19 +55,25 @@ form.new_pipe, form.edit_pipe {
 	font-size: 80%;
 	display: block;
 	textarea {
-		padding: 2px;
+		background-color: #2f2f2f;
+		color: #efefef;
+		padding: 7px;
 		width: 70%;
-		border: 1px solid #efefef;
+		border: none;
 		-webkit-border-radius: 5px 0 0 5px;
 		-moz-border-radius: 5px 0 0 5px;
 		border-radius: 5px 0 0 5px;
 		height: 72px;
 	}
 	input {
-		width: 26%;
-		height: 78px;
+		width: 74px;
+		height: 86px;
+		font-size: 85%;
+		background-color: #848484;
+		border: none;
 	}
 }
+
 a.toggle, a.comment-link {
 	color: #afafaf;
 }
@@ -81,12 +87,7 @@ a.approved {
 	border-bottom: 8px solid white;
 }
 .flash {
-	.notice {
-		color: green;
-	}
-	.alert {
-		color: red;
-	}
+	text-align: center;
 }
 #errors {
 	width: 350px;
