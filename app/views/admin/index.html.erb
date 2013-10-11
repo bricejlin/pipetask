@@ -1,7 +1,8 @@
 <h1>Admin</h1>
 
 <p>
-	Total Pipes Shot: <%= @pipes.count %>
+	Total 3 Side Pipes Shot: <%= pipes_with_sides(3) %><br/>
+	Total 9 Side Pipes Shot: <%= pipes_with_sides(9)%>
 </p>
 <p>
 	<% @pipes.each do |pipe| %>
