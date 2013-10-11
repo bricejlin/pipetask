@@ -1,0 +1,13 @@
+<h1>Admin</h1>
+
+<p>
+	Total Pipes Shot: <%= @pipes.count %>
+</p>
+<p>
+	<% @pipes.each do |pipe| %>
+		<% unless pipe.comments.blank? %>
+		<h3><%= pipe.name %></h3>
+		<p><%= pipe.comments %></p>
+		<% end %>
+	<% end %>
+</p>
