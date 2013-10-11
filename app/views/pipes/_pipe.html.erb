@@ -16,7 +16,7 @@
 				<%= f.submit "Save\n Comments" %>
 			</p>
 		<% end %>
-		<%= link_to approve_text(pipe), approve_pipe_path(pipe), remote: true, method: 'PUT', class: "#{approve_text(pipe)} toggle" %> | 
-		<%= link_to 'comments', '#', class: "comment-link" %>
+		<%= link_to approve_text(pipe), approve_pipe_path(pipe), remote: true, method: 'PUT', class: "#{approve_text(pipe)} toggle" %> <!-- | 
+		<%= link_to 'comments', '#', class: "comment-link" %> -->
 <% end %>
 </div>
