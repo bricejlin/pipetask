@@ -34,11 +34,15 @@ h1#logo a {
 	max-width: 100%;
 }
 form.new_pipe, form.edit_pipe {
-	width: 800px;
+	width: 80%px;
 	margin: 0 auto;
+	p {
+		float: left;
+		width: 50%;
+	}
 	input {
 		padding: 1%;
-	  width: 30%;
+	  width: 50%;
 	  border: 1px solid #efefef;
 	  height: 35px;
 	}
@@ -51,6 +55,7 @@ form.new_pipe, form.edit_pipe {
 	font-size: 80%;
 	display: block;
 	textarea {
+		padding: 2px;
 		width: 70%;
 		border: 1px solid #efefef;
 		-webkit-border-radius: 5px 0 0 5px;
@@ -105,4 +110,18 @@ a.approved {
 		url('pacifico-webfont.svg#pacifico-webfont') format('svg');
 	font-weight: normal;
 	font-style: normal;
+}
+
+@media only screen and (max-width: 500px) {
+	h1#logo a {
+		font-size: 36px;
+	}
+	h1 {
+		font-size: 20px;
+	}
+	form.new_pipe, form.edit_pipe {
+		p {
+			width: 100%;
+		}
+	}
 }
