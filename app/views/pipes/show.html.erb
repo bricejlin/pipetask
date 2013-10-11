@@ -1,5 +1,8 @@
 <h1><%= @pipe.name %></h1>
-<p><%= link_to 'Edit', edit_pipe_path(@pipe) %></p>
+<p>
+	<%= link_to 'Edit', edit_pipe_path(@pipe) %> | 
+	<%= link_to 'Delete', @pipe, method: :delete, data: { confirm: 'Are you sure you want to delete this pipe?' } %>
+</p>
 
 <% @pipe.images.each do |img| %>
 	<p>

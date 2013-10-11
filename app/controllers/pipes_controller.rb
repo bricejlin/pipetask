@@ -1,5 +1,5 @@
 class PipesController < ApplicationController
-	before_action :correct_pipe, only: [:show, :edit, :update, :approve]
+	before_action :correct_pipe, only: [:show, :edit, :update, :destroy, :approve]
   def index
   	@pipes = Pipe.all.order("created_at desc")
   end
@@ -27,13 +27,19 @@ class PipesController < ApplicationController
   def update
   	respond_to do |format|
   		if @pipe.update(pipe_params)
-  			format.html { redirect_to root_url, notice: "#{@pipe.name} succesfully updated!" }
+  			format.html { redirect_to root_url, notice: "#{@pipe.name} was succesfully updated!" }
   			format.js
   		else
   			format.html { render :index }
   		end
   	end
   end
+
+  def destroy
+    @pipe.destroy
+    redirect_to root_url, alert: "#{@pipe.name} was succesfully deleted!"
+  end
+
 
   def approve # toggles pipe's approval value true/false
   	respond_to do |format|

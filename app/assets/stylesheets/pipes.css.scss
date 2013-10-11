@@ -3,10 +3,13 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 $approved: #7cea6d;
-
+body {
+	background-color: #4b4b4b;
+	color: #efefef;
+}
 a {
 	text-decoration: none;
-	color: #414141;
+	color: #efefef;
 }
 #main-wrapper {
 	width: 95%;
@@ -25,6 +28,7 @@ h1#logo a {
 }
 .img-review {
 	border: 1px solid #efefef;
+	max-width: 100%;
 }
 form.new_pipe, form.edit_pipe {
 	width: 800px;
@@ -42,6 +46,7 @@ form.new_pipe, form.edit_pipe {
 .comment-form {
 	text-align: left;
 	font-size: 80%;
+	display: none;
 	textarea {
 		width: 70%;
 		border: 1px solid #efefef;
@@ -55,15 +60,24 @@ form.new_pipe, form.edit_pipe {
 		height: 78px;
 	}
 }
-.approved {
+a.toggle, a.comment-link {
+	color: #afafaf;
+}
+a.approved {
 	color: $approved;
 }
 .flexslider.true {
 	border: 4px solid $approved;
 }
+.flexslider.false {
+	border: 4px solid #919191;
+}
 .flash {
 	.notice {
 		color: green;
+	}
+	.alert {
+		color: red;
 	}
 }
 #errors {
