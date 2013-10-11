@@ -25,6 +25,9 @@ h1#logo a {
 .flex-wrap {
 	float: left;
 	padding: .5%;
+	a {
+		color: #9bc7c6;
+	}
 }
 .img-review {
 	border: 1px solid #efefef;
@@ -67,10 +70,10 @@ a.approved {
 	color: $approved;
 }
 .flexslider.true {
-	border: 4px solid $approved;
+	border-bottom: 8px solid $approved;
 }
 .flexslider.false {
-	border: 4px solid #919191;
+	border-bottom: 8px solid white;
 }
 .flash {
 	.notice {
