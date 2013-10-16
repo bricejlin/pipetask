@@ -2,7 +2,17 @@
 	<%= link_to 'add new pipe', new_pipe_path, id: 'add-pipe-link' %>
 </p>
 
-	<div id="pipes-container">
-		<%= render @pipes %>
-	</div>
+<div id="pipes-container">
+	<%= render @pipes %>
+</div>
 
+<div class="notes">
+	<p>
+		<ul>
+			<li>each image is an image gallery</li>
+			<li>click on pipe title for larger-res imgs</li>
+			<li>be sure to save each comment</li>
+			<li>if pipe img's are good to go, click approve!</li>
+		</ul>
+	</p>
+</div>

@@ -12,6 +12,9 @@ a {
 	text-decoration: none;
 	color: #efefef;
 }
+ul {
+	list-style: none;
+}
 #main-wrapper {
 	width: 95%;
 	margin: 1% 2%;
@@ -28,6 +31,16 @@ h1#logo a {
 	padding: .5%;
 	a {
 		color: #9bc7c6;
+	}
+}
+.notes {
+	position: absolute;
+	font-size: 10px;
+	top: 100px;
+	background-color: rgba(0,0,0,.5);
+	ul {
+		padding: 2px 10px;
+		text-align: left;
 	}
 }
 .img-review {
@@ -128,5 +141,8 @@ a.approved {
 		p {
 			width: 100%;
 		}
+	}
+	.notes {
+		display: none;
 	}
 }
