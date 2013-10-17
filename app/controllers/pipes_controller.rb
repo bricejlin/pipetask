@@ -1,5 +1,6 @@
 class PipesController < ApplicationController
 	before_action :correct_pipe, only: [:show, :edit, :update, :destroy, :approve]
+  before_action :admin_user, only: [:new, :create, :edit, :update, :destroy]
 
   def index
   	@pipes = Pipe.all.order("created_at desc")
@@ -40,7 +41,6 @@ class PipesController < ApplicationController
     @pipe.destroy
     redirect_to root_url, alert: "#{@pipe.name} was succesfully deleted!"
   end
-
 
   def approve # toggles pipe's approval value true/false
   	respond_to do |format|

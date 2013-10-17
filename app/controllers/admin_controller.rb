@@ -1,8 +1,7 @@
 class AdminController < ApplicationController
-	http_basic_authenticate_with name: 'brice', password: 'pipertrack'
-	
+	before_action :admin_user
+
   def index
   	@pipes = Pipe.all
   end
-
 end

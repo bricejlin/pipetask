@@ -7,10 +7,15 @@ $approved: #7cea6d;
 body {
 	background-color: #4b4b4b;
 	color: #efefef;
+	text-align: center;
 }
 a {
 	text-decoration: none;
 	color: #efefef;
+}
+nav ul li {
+	display: inline;
+	padding: 10px;
 }
 ul {
 	list-style: none;
@@ -19,12 +24,14 @@ ul {
 	width: 95%;
 	margin: 1% 2%;
 	overflow: hidden;
-	text-align: center;
 }
-h1#logo a {
-	font-family: 'pacifico';
-	font-size: 50px;
-	color: #9bc7c6;
+h1#logo {
+	margin: 15px auto;
+	a {
+		font-family: 'pacifico';
+		font-size: 50px;
+		color: #9bc7c6;
+	}
 }
 .flex-wrap {
 	float: left;
@@ -33,11 +40,18 @@ h1#logo a {
 		color: #9bc7c6;
 	}
 }
+.user {
+	color: #47bef9;
+}
 .notes {
 	position: absolute;
 	font-size: 10px;
-	top: 100px;
+	top: 30px;
+	left: 40px;
 	background-color: rgba(0,0,0,.5);
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
 	ul {
 		padding: 2px 10px;
 		text-align: left;
@@ -47,12 +61,12 @@ h1#logo a {
 	border: 1px solid #efefef;
 	max-width: 100%;
 }
-form.new_pipe, form.edit_pipe {
-	width: 80%px;
-	margin: 0 auto;
+form.new_pipe, form.edit_pipe, form.new_user, form.new_session {
+	width: 80%;
+	margin: 40px auto;
 	fieldset p {
-		float: left;
-		width: 50%;
+		width: 80%;
+		text-align: right;
 	}
 	input {
 		padding: 1%;
@@ -105,6 +119,7 @@ a.approved {
 }
 .flash {
 	text-align: center;
+	margin-bottom: 5px;
 }
 #errors {
 	width: 350px;
@@ -118,7 +133,12 @@ a.approved {
 		text-align: left;
 	}
 }
-
+.comments {
+	color: #dfa08b;
+}
+a[href="/signup"] {
+	color: #47bef9;
+}
 @font-face {
 	font-family: 'pacifico';
 	src:url('pacifico-webfont.eot');
