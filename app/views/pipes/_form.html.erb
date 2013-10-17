@@ -2,9 +2,6 @@
 	<%= render 'shared/errors', object: @pipe %>
 	<fieldset>
 		<p>
-			<%= file_field_tag('pipe_images_attributes_file', multiple: true, name: "pipe[images_attributes][][file]") %>
-		</p>
-		<p>
 			<%= f.label :name %>
 			<%= f.text_field :name, autofocus: true %>
 		</p>

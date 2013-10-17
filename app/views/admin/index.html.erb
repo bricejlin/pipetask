@@ -28,7 +28,7 @@
 <p>
 	<% @pipes.each do |pipe| %>
 		<% unless pipe.comments.blank? %>
-		<h3><%= pipe.name %></h3>
+		<h3><%= link_to pipe.name, pipe %></h3>
 		<p><%= pipe.comments %></p>
 		<% end %>
 	<% end %>
