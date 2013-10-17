@@ -1,9 +1,30 @@
-<h1>Admin</h1>
+<section class="admin">
+<h1>Administrative</h1>
 
-<p>
-	Total 3 Side Pipes Shot: <%= pipes_with_sides(3) %><br/>
-	Total 9 Side Pipes Shot: <%= pipes_with_sides(9)%>
-</p>
+<table>
+	<caption><h2>Pipe Tracker</h2></caption>
+	<thead>
+		<tr>
+			<th></th>
+			<th>Uploaded</th>
+			<th>Approved</th>
+			<th>Outstanding</th>
+			<th>Receivable</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% sides = [3, 9] %> <!-- How do I pull this from database? -->
+		<% sides.each do |side| %>
+		<tr>
+			<th><%= side %>-side</th>
+			<td><%= sides_pipe_count(side) %></td>
+			<td><%= sides_pipe_count(side,'approved') %></td>
+			<td><%= sides_pipe_count(side, 'unapproved') %></td>
+			<td><%= receivable(side) %></td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>
 <p>
 	<% @pipes.each do |pipe| %>
 		<% unless pipe.comments.blank? %>
@@ -12,3 +33,4 @@
 		<% end %>
 	<% end %>
 </p>
+</section>
