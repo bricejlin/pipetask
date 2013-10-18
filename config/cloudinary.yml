@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: bricejlin
+  api_key: '969741233855287'
+  api_secret: PLYLg0vSA415bV2AM7qwAIi_Iz8
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: bricejlin
+  api_key: '969741233855287'
+  api_secret: PLYLg0vSA415bV2AM7qwAIi_Iz8
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: bricejlin
+  api_key: '969741233855287'
+  api_secret: PLYLg0vSA415bV2AM7qwAIi_Iz8
+  enhance_image_tag: true
+  static_image_support: false
