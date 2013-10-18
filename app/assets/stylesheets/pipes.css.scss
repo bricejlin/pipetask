@@ -20,6 +20,9 @@ nav ul li {
 ul {
 	list-style: none;
 }
+h3 {
+	text-shadow: 5px 5px 5px #282828;
+}
 #main-wrapper {
 	width: 95%;
 	margin: 1% 2%;
@@ -31,6 +34,7 @@ h1#logo {
 		font-family: 'pacifico';
 		font-size: 50px;
 		color: #9bc7c6;
+		text-shadow: 5px 5px 5px #282828;
 	}
 }
 .flex-wrap {
@@ -82,6 +86,7 @@ form.new_pipe, form.edit_pipe, form.new_user, form.new_session {
 	text-align: left;
 	font-size: 80%;
 	display: block;
+	box-shadow: 5px 5px 5px #282828;
 	textarea {
 		background-color: #2f2f2f;
 		color: #efefef;
@@ -110,6 +115,9 @@ a.toggle, a.comment-link {
 }
 a.approved {
 	color: $approved;
+}
+.flexslider {
+	box-shadow: 5px 5px 10px #282828;
 }
 .flexslider.true {
 	border-bottom: 6px solid $approved;
