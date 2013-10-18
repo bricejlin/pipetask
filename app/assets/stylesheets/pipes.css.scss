@@ -13,9 +13,16 @@ a {
 	text-decoration: none;
 	color: #efefef;
 }
-nav ul li {
-	display: inline;
-	padding: 10px;
+nav {
+	margin-top: 40px;
+	ul {
+		padding-left: 0px;
+		li {
+			display: inline;
+			padding: 10px;
+			border: 1px solid white;
+		}
+	}
 }
 ul {
 	list-style: none;
