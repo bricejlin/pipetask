@@ -5,67 +5,76 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+User.create!([
+	{
+		first_name: 'Brice',
+		last_name: 'Lin',
+		email: 'bricejlin@gmail.com',
+		password: 'foo',
+		password_confirmation: 'foo'
+	}
+])
 
 Pipe.create!([
 	{
 		name: 'Example Pipe Uno',
 		sides_shot: 3,
 		images_attributes: [
-			{ url: 'pipe-1.jpg' },
-			{ url: 'pipe-2.jpg' },
-			{ url: 'pipe-3.jpg' }
+			{ url: 'pipe-46.jpg' },
+			{ url: 'pipe-47.jpg' },
+			{ url: 'pipe-48.jpg' }
 		]
 	},
 	{
 		name: 'Example Pipe Dos',
 		sides_shot: 3,
 		images_attributes: [
-			{ url: 'pipe-4.jpg' },
-			{ url: 'pipe-5.jpg' },
-			{ url: 'pipe-6.jpg' }	
+			{ url: 'pipe-49.jpg' },
+			{ url: 'pipe-50.jpg' },
+			{ url: 'pipe-51.jpg' }	
 		]
 	},
 	{
 		name: 'Example Pipe Tres',
 		sides_shot: 3,
 		images_attributes: [
-			{ url: 'pipe-7.jpg' },
-			{ url: 'pipe-8.jpg' },
-			{ url: 'pipe-9.jpg' }	
+			{ url: 'pipe-83.jpg' },
+			{ url: 'pipe-84.jpg' },
+			{ url: 'pipe-85.jpg' }	
 		]	
 	},
 	{
 		name: 'Example Pipe Cuatro',
 		sides_shot: 3,
 		images_attributes: [
-			{ url: 'pipe-10.jpg' },
-			{ url: 'pipe-11.jpg' }
+			{ url: 'pipe-90.jpg' },
+			{ url: 'pipe-91.jpg' }
 		]		
 	},
 	{
 		name: 'Example Pipe Cinco',
 		sides_shot: 9,
 		images_attributes: [
-			{ url: 'pipe-1.jpg' },
-			{ url: 'pipe-2.jpg' },
-			{ url: 'pipe-3.jpg' },
-			{ url: 'pipe-4.jpg' },
-			{ url: 'pipe-5.jpg' },
-			{ url: 'pipe-6.jpg' },
-			{ url: 'pipe-7.jpg' }
+			{ url: 'a_tynnubill_1-01.jpg' },
+			{ url: 'a_tynnubill_1-02.jpg' },
+			{ url: 'a_tynnubill_1-03.jpg' },
+			{ url: 'a_tynnubill_1-04.jpg' },
+			{ url: 'a_tynnubill_1-05.jpg' },
+			{ url: 'a_tynnubill_1-06.jpg' },
+			{ url: 'a_tynnubill_1-07.jpg' }
 		]	
 	},
 	{
 		name: 'Example Pipe Seis',
 		sides_shot: 3,
 		images_attributes: [
-			{ url: 'pipe-11.jpg' },
-			{ url: 'pipe-12.jpg' },
-			{ url: 'pipe-13.jpg' },
-			{ url: 'pipe-14.jpg' },
-			{ url: 'pipe-15.jpg' },
-			{ url: 'pipe-16.jpg' },
-			{ url: 'pipe-17.jpg' }
+			{ url: 'pipe-91.jpg' },
+			{ url: 'pipe-92.jpg' },
+			{ url: 'pipe-93.jpg' },
+			{ url: 'pipe-94.jpg' },
+			{ url: 'pipe-95.jpg' },
+			{ url: 'pipe-96.jpg' },
+			{ url: 'pipe-97.jpg' }
 		]	
 	}
 ])
