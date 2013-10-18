@@ -3,7 +3,7 @@ class PipesController < ApplicationController
   before_action :admin_user, only: [:new, :create, :edit, :destroy]
 
   def index
-  	@pipes = Pipe.all.order("created_at desc")
+  	@pipes = Pipe.all
   end
 
   def new
