@@ -1,6 +1,6 @@
 <div class="flex-wrap">
 <%= div_for pipe do %>
-	<h3><%= link_to pipe.name, pipe %></h3>
+	<h3><%= link_to pipe.name.upcase, pipe %></h3>
 		<div class="flexslider <%= pipe.approved %>">
 			<ul class="slides">
 				<% pipe.images.each do |img| %>
