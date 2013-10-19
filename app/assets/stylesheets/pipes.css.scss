@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 $approved: #7cea6d;
+$my_turquoise: #9bc7c6;
 
 body {
 	background-color: #4b4b4b;
@@ -40,7 +41,7 @@ h1#logo {
 	a {
 		font-family: 'pacifico';
 		font-size: 50px;
-		color: #9bc7c6;
+		color: $my_turquoise;
 		text-shadow: 5px 5px 5px #282828;
 	}
 }
@@ -48,7 +49,7 @@ h1#logo {
 	float: left;
 	padding: .5%;
 	a {
-		color: #9bc7c6;
+		color: $my_turquoise;
 	}
 }
 .user {
@@ -116,6 +117,14 @@ form.new_pipe, form.edit_pipe, form.new_user, form.new_session {
 		border-radius: 0 5px 5px 0;
 	}
 }
+@keyframes myfirst
+{
+0%   {background:red;}
+25%  {background:yellow;}
+50%  {background:blue;}
+100% {background:green;}
+}
+
 .images table {
 	tr {
 		padding: 5px;

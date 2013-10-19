@@ -10,7 +10,7 @@
 				<% end %>
 			</ul>
 		</div>
-		<%= form_for pipe, html: {class: 'comment-form' } do |f| %>
+		<%= form_for pipe, html: {class: 'comment-form' }, remote: true do |f| %>
 			<p>
 				<%= f.text_area :comments, rows: 4 %>
 				<%= f.submit "Save\n Comments" %>
