@@ -90,12 +90,17 @@ html[xmlns] .slides {display: block;}
 .flex-control-thumbs img:hover {opacity: 1;}
 .flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
 
+@media screen and (min-width: 320px ) and (max-width: 900px) {
+	.flexslider { padding: 0; width: 340px; height: 255px;}
+	.flexslider .slides img {width: 340px; height: 255px; display: block;}
+}
+
 @media screen and (max-width: 860px) {
   .flex-direction-nav .flex-prev { opacity: 1; left: 10px;}
   .flex-direction-nav .flex-next { opacity: 1; right: 10px;}
 }
 
-@media screen and (max-width: 1350px) {
-	.flexslider { padding: 0; width: 350px; height: 250px;}
-	.flexslider .slides img {width: 350px; height: 250px; display: block;}
+@media screen and (min-width: 900px) and (max-width: 1350px) {
+	.flexslider { padding: 0; width: 320px; height: 240px;}
+	.flexslider .slides img {width: 320px; height: 240px; display: block;}
 }
