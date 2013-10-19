@@ -14,5 +14,6 @@ Pipetrack::Application.routes.draw do
   get 'admin', to: 'admin#index'
   get '/signup',  to: 'users#new'
   get '/signin',  to: 'sessions#new'
+  get '/images', to: 'images#index'
   delete '/signout', to: 'sessions#destroy'
 end

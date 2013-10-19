@@ -1,0 +1,23 @@
+<section class="images">
+<h1>Images For Download (under construction)</h1>
+
+<table>
+	<caption><h2>Images Uploaded</h2></caption>
+	<thead>
+		<tr>
+			<th>Date Uploaded</th>
+			<th>Pipe Name</th>
+			<th>Image Url</th>
+		</tr>
+	</thead>
+	<tbody>
+		<% @images.each do |image| %>
+		<tr>
+			<td><%= image.created_at.strftime('%m-%d-%Y') %></td>
+			<td><%= image.pipe.name %></td>
+			<td><%= image.url %></td>
+		</tr>
+		<% end %>
+	</tbody>
+</table>
+</section>
