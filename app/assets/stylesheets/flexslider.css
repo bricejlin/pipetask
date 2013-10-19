@@ -90,7 +90,7 @@ html[xmlns] .slides {display: block;}
 .flex-control-thumbs img:hover {opacity: 1;}
 .flex-control-thumbs .flex-active {opacity: 1; cursor: default;}
 
-@media screen and (min-width: 320px ) and (max-width: 900px) {
+@media screen and (max-width: 900px) {
 	.flexslider { padding: 0; width: 340px; height: 255px;}
 	.flexslider .slides img {width: 340px; height: 255px; display: block;}
 }
