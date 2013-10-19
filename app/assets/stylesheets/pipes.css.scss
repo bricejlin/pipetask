@@ -94,7 +94,7 @@ form.new_pipe, form.edit_pipe, form.new_user, form.new_session {
 	text-align: left;
 	font-size: 80%;
 	display: block;
-	box-shadow: 5px 5px 5px #282828;
+	
 	textarea {
 		background-color: #2f2f2f;
 		color: #efefef;
@@ -106,9 +106,10 @@ form.new_pipe, form.edit_pipe, form.new_user, form.new_session {
 		border-radius: 5px 0 0 5px;
 		height: 72px;
 		resize: none;
+		box-shadow: 5px 5px 5px #282828;
 	}
 	input {
-		width: 74px;
+		width: 24%;
 		height: 86px;
 		font-size: 85%;
 		background-color: #848484;
@@ -116,16 +117,9 @@ form.new_pipe, form.edit_pipe, form.new_user, form.new_session {
 		-webkit-border-radius: 0 5px 5px 0;
 		-moz-border-radius: 0 5px 5px 0;
 		border-radius: 0 5px 5px 0;
+		box-shadow: 5px 5px 5px #282828;
 	}
 }
-@keyframes myfirst
-{
-0%   {background:red;}
-25%  {background:yellow;}
-50%  {background:blue;}
-100% {background:green;}
-}
-
 .images table {
 	tr {
 		padding: 5px;
@@ -197,6 +191,9 @@ a[href="/signup"] {
 	}
 	.notes {
 		display: none;
+	}
+	nav {
+		font-size: 70%;
 	}
 }
 

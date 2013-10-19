@@ -11,10 +11,8 @@
 			</ul>
 		</div>
 		<%= form_for pipe, html: {class: 'comment-form' }, remote: true do |f| %>
-			<p>
 				<%= f.text_area :comments, rows: 4 %>
 				<%= f.submit "Save\n Comments" %>
-			</p>
 		<% end %>
 		<%= link_to approve_text(pipe), approve_pipe_path(pipe), remote: true, method: 'PUT', class: "#{approve_text(pipe)} toggle" %>
 <% end %>
