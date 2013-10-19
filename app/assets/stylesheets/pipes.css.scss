@@ -30,6 +30,7 @@ ul {
 }
 h3 {
 	text-shadow: 3px 3px 5px #282828;
+	margin: 3% auto;
 }
 #main-wrapper {
 	width: 95%;
@@ -94,7 +95,7 @@ form.new_pipe, form.edit_pipe, form.new_user, form.new_session {
 	text-align: left;
 	font-size: 80%;
 	display: block;
-	
+	margin-bottom: 3%;
 	textarea {
 		background-color: #2f2f2f;
 		color: #efefef;
