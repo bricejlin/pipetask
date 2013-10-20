@@ -12,7 +12,12 @@ class PipesController < ApplicationController
   end
 
   def create
-  	@pipe = Pipe.new(pipe_params)
+  	@pipe = Pipe.new(pipe_params)    
+    if !params[:images_image].nil?
+      @image = @pipe.images.build
+      @image.image = params[:images_image][:url]
+      @image.save
+    end
   	if @pipe.save
   		redirect_to root_url, notice: "Pipe successfully added!"
   	else
