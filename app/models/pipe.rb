@@ -4,4 +4,5 @@ class Pipe < ActiveRecord::Base
 	validates_uniqueness_of :name
 	validates :sides_shot, numericality: { greater_than: 0 }
 	accepts_nested_attributes_for :images, reject_if: proc { |a| a['url'].blank? }
+
 end

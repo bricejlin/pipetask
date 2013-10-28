@@ -1,9 +1,11 @@
 module AdminHelper
 	def receivable(sides)
-		if sides == 3
+		if sides == 2
+			number_to_currency(2 * sides_pipe_count(sides, 'approved'))
+		elsif sides == 3
 			number_to_currency(3 * sides_pipe_count(sides, 'approved'))
-		elsif sides = 9
-			number_to_currency(4 * sides_pipe_count(sides, 'approved'))
+		elsif sides == 9
+			number_to_currency(5 * sides_pipe_count(sides, 'approved'))
 		end
 	end
 
