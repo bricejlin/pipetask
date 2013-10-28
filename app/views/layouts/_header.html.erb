@@ -7,6 +7,8 @@
 				<li><%= link_to 'add new pipe', new_pipe_path, id: 'add-pipe-link' %></li>
 				<li><%= link_to 'admin', admin_path %></li>
 				<li>signed in as <span class="user"><%= current_user.first_name %></span> [<%= link_to 'sign out', signout_path, method: 'delete' %>]</li>
+			<% else %>
+				<li><%= link_to 'sign in', signin_path %></li>
 			<% end %>
 		</ul>
 	</nav>
