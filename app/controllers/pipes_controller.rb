@@ -13,6 +13,7 @@ class PipesController < ApplicationController
   def create
   	@pipe = Pipe.new(pipe_params)    
     if !params[:images_file].nil?
+      @pipe.sides_shot = params[:images_file][:url].count
       params[:images_file][:url].each do |url|
         @image = @pipe.images.build
         @image.file = url

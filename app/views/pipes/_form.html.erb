@@ -5,10 +5,7 @@
 			<%= f.label :name %>
 			<%= f.text_field :name, autofocus: true %>
 		</p>
-		<p>
-			<%= f.label :sides_shot %>
-			<%= f.text_field :sides_shot %>
-		</p>
+
 		<%= fields_for :images_file do |img| %>
 		<p>
 			<%= img.label :url, 'Image Filename' %>
