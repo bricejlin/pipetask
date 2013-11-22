@@ -4,9 +4,11 @@ ruby '2.0.0'
 gem 'rails', '4.0.0'
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'jquery-ui-rails'
+gem 'fog', '~> 1.3.1'
 
 group :development, :test do
 	gem 'sqlite3'
+  gem 'dotenv-rails'
 end
 
 group :production do
