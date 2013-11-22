@@ -6,6 +6,6 @@
 
 <% @pipe.images.each do |img| %>
 	<p>
-		<%= image_tag("#{img.url}", class: 'img-review') %>
+		<%= image_tag img.file_url, class: 'img-review' %>
 	</p>
 <% end %>

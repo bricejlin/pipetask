@@ -9,10 +9,19 @@
 			<%= f.label :sides_shot %>
 			<%= f.text_field :sides_shot %>
 		</p>
-		<%= fields_for :images_image do |img| %>
+		<%= fields_for :images_file do |img| %>
 		<p>
 			<%= img.label :url, 'Image Filename' %>
 			<%= img.file_field :url, multiple: true %>
+		</p>
+		<p>
+			<% if @pipe.images.any? %>
+				<%= img.label :url, 'Images' %>
+				<% @pipe.images.each do |image| %>
+					<%= image_tag image.file_url(:thumb) %>
+					<%= img.file_field :url %>
+				<% end %>
+			<% end %>
 		</p>
 		<% end %>
 		<p>

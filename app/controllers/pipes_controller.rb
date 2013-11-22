@@ -8,16 +8,14 @@ class PipesController < ApplicationController
 
   def new
   	@pipe = Pipe.new
-  	9.times { @pipe.images.build }
   end
 
   def create
-    
   	@pipe = Pipe.new(pipe_params)    
-    if !params[:images_image].nil?
-      params[:images_image][:url].each do |url|
+    if !params[:images_file].nil?
+      params[:images_file][:url].each do |url|
         @image = @pipe.images.build
-        @image.image = url
+        @image.file = url
         @image.save
       end
     end
