@@ -12,7 +12,7 @@
 		<%= fields_for :images_image do |img| %>
 		<p>
 			<%= img.label :url, 'Image Filename' %>
-			<%= img.file_field :url %>
+			<%= img.file_field :url, multiple: true %>
 		</p>
 		<% end %>
 		<p>
