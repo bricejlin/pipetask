@@ -5,11 +5,7 @@
 			<ul class="slides">
 				<% pipe.images.each do |img| %>
 					<li>
-						<% if img.image? %>
 						  <%= image_tag(img.image_url) %>
-						<% else %>
-						  <%= image_tag img.url %>
-						<% end %>
 					</li>
 				<% end %>
 			</ul>

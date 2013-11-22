@@ -9,6 +9,7 @@ gem 'fog', '~> 1.3.1'
 group :development, :test do
 	gem 'sqlite3'
   gem 'dotenv-rails'
+  gem 'better_errors'
 end
 
 group :production do
