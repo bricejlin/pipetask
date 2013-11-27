@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131122041748) do
+ActiveRecord::Schema.define(version: 20131127011037) do
 
   create_table "images", force: true do |t|
     t.integer  "pipe_id"
@@ -38,6 +38,7 @@ ActiveRecord::Schema.define(version: 20131122041748) do
     t.string   "password_digest"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.boolean  "admin",           default: false
   end
 
 end

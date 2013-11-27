@@ -1,6 +1,7 @@
 class PipesController < ApplicationController
 	before_action :correct_pipe, only: [:show, :edit, :update, :destroy, :approve]
   before_action :admin_user, only: [:new, :create, :edit, :destroy]
+  #before_action :signed_in_user, only: [:approve, :update]
 
   def index
   	@pipes = Pipe.all.order('created_at DESC')
@@ -55,7 +56,7 @@ class PipesController < ApplicationController
 	  		format.html { redirect_to root_url }
 	  		format.js
 	  	else
-	  		format.html { render :index }
+	  		format.html { redirect_to root_url, notice: "Please sign in first!" }
 	  	end
   	end
   end
