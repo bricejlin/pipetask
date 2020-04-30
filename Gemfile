@@ -24,9 +24,9 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
-gem 'carrierwave'
+gem 'carrierwave', '>= 0.9.0'
 
 
 group :doc do
-  gem 'sdoc', require: false
+  gem 'sdoc', '>= 0.4.0', require: false
 end
