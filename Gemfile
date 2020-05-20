@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 ruby '2.0.0'
 
-gem 'rails', '4.0.0'
+gem 'rails', '5.2.4.3'
 gem 'bcrypt-ruby', '~> 3.0.0'
-gem 'jquery-ui-rails'
+gem 'jquery-ui-rails', '>= 4.1.0'
 gem 'fog', '~> 1.3.1'
 gem 'rmagick'
 
@@ -18,13 +18,13 @@ group :production do
 	gem 'rails_12factor'
 end
 
-gem 'sass-rails', '~> 4.0.0'
+gem 'sass-rails', '~> 5.0.5'
 gem 'uglifier', '>= 1.3.0'
-gem 'coffee-rails', '~> 4.0.0'
-gem 'jquery-rails'
-gem 'turbolinks'
-gem 'jbuilder', '~> 1.2'
-gem 'carrierwave'
+gem 'coffee-rails', '~> 4.2.2'
+gem 'jquery-rails', '>= 4.0.1'
+gem 'turbolinks', '>= 1.3.0'
+gem 'jbuilder', '~> 1.5', '>= 1.5.2'
+gem 'carrierwave', '>= 0.9.0'
 
 
 group :doc do
