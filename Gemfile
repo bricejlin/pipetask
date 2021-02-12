@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.0.0'
 
-gem 'rails', '4.0.0'
+gem 'rails', '6.0.3.5'
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'jquery-ui-rails'
 gem 'fog', '~> 1.3.1'
