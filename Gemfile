@@ -4,13 +4,13 @@ ruby '2.0.0'
 gem 'rails', '4.0.0'
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'jquery-ui-rails'
-gem 'fog', '~> 1.3.1'
+gem 'fog', '~> 1.14.0'
 gem 'rmagick'
 
 group :development, :test do
 	gem 'sqlite3'
   gem 'dotenv-rails'
-  gem 'better_errors'
+  gem 'better_errors', '>= 2.8.0'
 end
 
 group :production do
