@@ -5,7 +5,7 @@ gem 'rails', '4.0.0'
 gem 'bcrypt-ruby', '~> 3.0.0'
 gem 'jquery-ui-rails'
 gem 'fog', '~> 1.3.1'
-gem 'rmagick'
+gem 'rmagick', '>= 5.3.0'
 
 group :development, :test do
 	gem 'sqlite3'
